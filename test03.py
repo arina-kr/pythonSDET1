@@ -5,7 +5,6 @@ from selenium.common.exceptions import NoSuchElementException
 def test03_function():
 
     # Инициализация драйвера
-    # driver = webdriver.Chrome()
 
     options = webdriver.ChromeOptions()
     options.add_argument('ignore-certificate-errors')
@@ -42,26 +41,6 @@ def test03_function():
     check_exists_sort_by_id()
 
     input('Press ENTER to exit')
-
-
-''''
-    id_test_cases = driver.find_elements('xpath', "//span[@class = 'Id Id_size_tiny TreeNodeId']")
-    array_id_test_cases = [element.text for element in id_test_cases]
-
-    
-    for i in range(len(array_id_test_cases)):
-        n = array_id_test_cases[i].lstrip[1: ]
-
-
-    a = array_id_test_cases.sort()
-
-
-    if (a == array_id_test_cases):
-        driver.get('https://allure.x5.ru/project/123/dashboards')
-    else:
-        driver.get('https://allure.x5.ru/project/123/launches')
-
-'''
 
 
 test03_function()

@@ -5,7 +5,6 @@ from selenium.common.exceptions import NoSuchElementException
 def test02_function():
 
     # Инициализация драйвера
-    # driver = webdriver.Chrome()
 
     options = webdriver.ChromeOptions()
     options.add_argument('ignore-certificate-errors')

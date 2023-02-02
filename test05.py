@@ -1,20 +1,11 @@
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
-from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.common.keys import Keys
 
 # Авторизация
 def test05_function():
 
     # Инициализация драйвера
-    # driver = webdriver.Chrome()
-
-    #options = webdriver.ChromeOptions()
-    #options.add_argument('ignore-certificate-errors')
-    #driver = webdriver.Chrome(chrome_options=options)
 
     chrome_options = Options()
     chrome_options.add_argument('ignore-certificate-errors')
@@ -109,15 +100,6 @@ def test05_function():
     ckeck_tag_no_regress()
 
     test11 = 'Экран "Рассчитанные цены"'
-    #driver.find_element('xpath', "//*[@class = 'CustomFieldValueGroupedList__value']//*[text()='Экран Рассчитанные цены']")
-    #def field_feature_and_field_story():
-    #    try:
-    #        driver.find_element('xpath', "//*[@class = 'CustomFieldValueGroupedList__value']//*[text()='Ермолов Эд']") and driver.find_element('xpath', "//*[@class = 'CustomFieldValueGroupedList__value']//*[text()='Экран `Рассчитанные цены`']")
-    #    except NoSuchElementException:
-    #        print("qqq")
-    #    print("mmm")
-
-    #field_feature_and_field_story()
 
     # Проверить поле Fields. Feature == "Ермолов Эд", Story == Экран "Рассчитанные цены"
 
@@ -129,8 +111,6 @@ def test05_function():
         return True
 
     field_feature_and_field_story()
-
-
 
     input('Press ENTER to exit')
 

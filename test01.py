@@ -4,7 +4,6 @@ from selenium import webdriver
 # Авторизация
 def test01_function():
     # Инициализация драйвера
-    # driver = webdriver.Chrome()
 
     options = webdriver.ChromeOptions()
     options.add_argument('ignore-certificate-errors')

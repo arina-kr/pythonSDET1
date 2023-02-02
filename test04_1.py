@@ -10,11 +10,6 @@ from selenium.webdriver.common.keys import Keys
 def test04_1_function():
 
     # Инициализация драйвера
-    # driver = webdriver.Chrome()
-
-    #options = webdriver.ChromeOptions()
-    #options.add_argument('ignore-certificate-errors')
-    #driver = webdriver.Chrome(chrome_options=options)
 
     chrome_options = Options()
     chrome_options.add_argument('ignore-certificate-errors')

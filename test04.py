@@ -2,19 +2,11 @@ from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.common.keys import Keys
 
 # Авторизация
 def test04_function():
 
     # Инициализация драйвера
-    # driver = webdriver.Chrome()
-
-    #options = webdriver.ChromeOptions()
-    #options.add_argument('ignore-certificate-errors')
-    #driver = webdriver.Chrome(chrome_options=options)
 
     chrome_options = Options()
     chrome_options.add_argument('ignore-certificate-errors')
@@ -64,18 +56,6 @@ def test04_function():
         return True
 
     check_review()
-
-    # пункт 6: Отфильтровать тест-кейсы по тегу: ввести значение regress. Нажать на Enter.
-    #status_review = driver.find_element('xpath', "//span[text() = 'Review']")
-    #status_review.click()
-
-    #filter_tag = driver.find_element('xpath', "//*[@class = 'FilterGroup']//label[last()-6]//*[@class = ' css-129fuww-control']")
-    #filter_tag.click()
-    #time.sleep(5)
-    #filter_tag.send_keys('regress')
-    #filter_tag.key_down(Keys.ENTER)
-
-
 
     input('Press ENTER to exit')
 
